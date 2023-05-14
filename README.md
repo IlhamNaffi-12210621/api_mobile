@@ -1,1 +1,1 @@
-# api_mobile
+# Repo ini ditujuan untuk memenuhi tugas mingguan kampus BSI Pontianak
