@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320
+class ComposerStaticInitc00258014cc1455fb3fdc0e23ce895f4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -509,8 +509,12 @@ class ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\PenggunaController' => __DIR__ . '/../..' . '/app/Http/Controllers/PenggunaController.php',
+        'App\\Http\\Controllers\\WargaController' => __DIR__ . '/../..' . '/app/Http/Controllers/WargaController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+        'App\\Http\\Middleware\\CekAPIKey' => __DIR__ . '/../..' . '/app/Http/Middleware/CekAPIKey.php',
+        'App\\Http\\Middleware\\CekUser' => __DIR__ . '/../..' . '/app/Http/Middleware/CekUser.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -518,7 +522,9 @@ class ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\PenggunaModel' => __DIR__ . '/../..' . '/app/Models/PenggunaModel.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\WargaModel' => __DIR__ . '/../..' . '/app/Models/WargaModel.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -638,6 +644,8 @@ class ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\PenggunaSeeder' => __DIR__ . '/../..' . '/database/seeders/PenggunaSeeder.php',
+        'Database\\Seeders\\WargaSeeder' => __DIR__ . '/../..' . '/database/seeders/WargaSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -5478,10 +5486,10 @@ class ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5b2a19509b78d033eb0a0cea708bf320::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc00258014cc1455fb3fdc0e23ce895f4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc00258014cc1455fb3fdc0e23ce895f4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc00258014cc1455fb3fdc0e23ce895f4::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitc00258014cc1455fb3fdc0e23ce895f4::$classMap;
 
         }, null, ClassLoader::class);
     }
